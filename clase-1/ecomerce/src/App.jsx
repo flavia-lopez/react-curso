@@ -1,5 +1,6 @@
 //import { useState } from "react";//
 //import Saludo from "./Saludo.jsx";//
+import CartCounter from "./components/CartCounter.jsx";
 import "./app.css";
 import Cards from "./components/Cards.jsx";
 
@@ -29,15 +30,22 @@ function App() {
     </Cards>
 
     <Cards title="Mi segunda tarjeta">
-      <p>Este es el contenido de la segunda tarjeta.</p>
-          
 
+      <div>
+       <p>Este es el contenido de la segunda tarjeta.</p>
+          
       <ul>
         <li>Elemento 1</li>
         <li>Elemento 2</li>
       </ul>
+
+      </div>
+      
+      
+
     </Cards>
 
+    <CartCounter/>
 
     </>
 
