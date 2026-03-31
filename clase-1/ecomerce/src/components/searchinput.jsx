@@ -1,20 +1,28 @@
-import {useRef} from "react";
+import { useRef } from "react";
 
 function SearchInput({placeholder = "Buscar..."}) {
     const inputRef = useRef(null);
-    console.log(inputRef);
+
+
 const handleFocusSearch = () => {
     inputRef.current.focus();
 }
 
+return (
     <div>
-        <input type="text" placeholder={placeholder} aria-level = "Buscar" 
+        <input 
+        type="text" 
+        placeholder={placeholder} 
+        aria-label = "Buscar" 
          ref={inputRef}
         />
 
-        <button onClick={handleFocusSearch}>Evocar busqueda</button>
+        <button onClick={handleFocusSearch}>Enfocar busqueda</button>
        
     </div>
+)
+
+
 
 }
 
